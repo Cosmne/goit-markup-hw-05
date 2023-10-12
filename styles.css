@@ -33,6 +33,7 @@ h1 {
 }
 .logo :hover {
   color: var(--button-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 #current {
@@ -94,11 +95,19 @@ h1 {
   width: 528px;
   height: 581px;
   position:absolute;
+  transition-timing-function: ease-in-out;
+  transition-delay: 200ms;
+  transition-duration: 200ms;
+  opacity: 1;
+  transition: opacity 200ms;
   box-shadow: 0px 2px 1px 0px #00000033;
   box-shadow: 0px 1px 1px 0px #00000024;
   box-shadow: 0px 1px 3px 0px #0000001F;
-  
 }
+
+
+
+
 .is-hidden {
   visibility: hidden;
 }
@@ -145,7 +154,7 @@ h1 {
 .overlay:hover .card-hover {
       transform: translatey(0);
     }
-
+  
 /*Studio*/
 /*header-footer*/
 .header-style {
@@ -213,6 +222,8 @@ h1 {
   padding-left: 4%;
   padding-right: 4%;
 }
+.subpage-navigation button{
+transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 .subpage-navigation {
   display: flex;
@@ -221,8 +232,6 @@ h1 {
   margin-top: 0;
   width: 516px;
   height: 38px;
-
-
 }
 
 .footer-style {
@@ -296,6 +305,7 @@ a:visited {
   cursor: pointer;
   width: 200px;
   height: 50px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .req-serv-button:hover {
@@ -446,6 +456,7 @@ a:visited {
 .social-icons-footer li:hover {
   background-color: var(--button-effect);
   fill: var(--bg-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-icons {
@@ -574,6 +585,7 @@ fill: #AFB1B8;
   box-sizing: border-box;
   width: fit-content;
   margin-left: 50px;
+  
 }
 
 .links {
@@ -627,6 +639,7 @@ fill: #AFB1B8;
   border: 1px solid #ECECEC;
   padding-bottom: 20px;
   margin-bottom: 30px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .services li:hover {
@@ -646,6 +659,8 @@ fill: #AFB1B8;
   margin-left: 24px;
 }
 /* Icon styles*/
+.effects svg {transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+.effects a {transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 
 .customer-icons svg {
