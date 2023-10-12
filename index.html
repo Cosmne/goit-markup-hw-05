@@ -12,7 +12,8 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="icons.svg">
+  <link rel="stylesheet" href="icons.svg" />
+  <link rel="stylesheet" href="modal.js" />
 </head>
 
 <body>
@@ -65,10 +66,11 @@
         </h1>
 
         <!--Request Servvice Button-->
-        <div class="button">
-          <button class="req-serv-button" type="button">
+        <div  class="button">
+          <button data-modal-open class="req-serv-button" type="button">
             REQUEST OUR SERVICE
-          </button>
+          </button >
+         
         </div>
       </div>
     </section>
@@ -390,9 +392,15 @@
           </li>
         </ul>
       </div>
-
+      <!-- Modal-->
+      <div class="modal is-hidden" data-modal>
+        <div class="modal-content">
+          <button class="close-btn" data-modal-close>&times;</button>
+        </div>
+      </div>
     </address>
   </footer>
+  <script src="./modal.js"></script>
 </body>
 
 </html>
